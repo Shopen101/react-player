@@ -21,6 +21,7 @@
     align-items: center;
     padding: 1rem 2rem;
     cursor: pointer;
+    transition: background 0.5s ease;
 
     &:hover {
         background: rgb(244, 189, 255);
@@ -44,7 +45,8 @@
     }
 }
 
-h3, h4 {
+h3,
+h4 {
     font-weight: 400;
     color: rgb(99, 99, 99);
 }
@@ -75,4 +77,10 @@ h3, h4 {
 .active-library {
     transform: translateX(0%);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .library {
+        width: 100%;
+    }
 }
